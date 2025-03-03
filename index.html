@@ -31,12 +31,9 @@
         </div>          
     </nav>
 
-
     <div class="flex justify-between gap-20">
       <div class="mt-10 mb-5 flex flex-col gap-20 w-full items-stretch justify-between">
- 
         <div class="flex gap-5 justify-between">
-
           <div class="flex-1">
             <div class="flex gap-5 rounded-md justify-center items-center py-6 px-5 bg-gray-200">
               <img src="./assets/checkbox.png" alt="Checkbox" />
@@ -46,7 +43,7 @@
               </div>
             </div>
           </div>
-
+    
           <button id="discover-btn">
             <div class="py-4 px-6 flex gap-5 bg-gradient-to-r from-blue-500 to-purple-200 rounded-md">
               <img src="./assets/board.png" alt="Board Icon" />
@@ -59,7 +56,7 @@
             <h1 id="date" class="font-bold text-xl"></h1>
           </div>
         </div>
-    
+
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
           <div class="p-5 rounded-lg bg-gray-200 w-72 h-52">
             <p id="ShopEase">ShopEase</p>
@@ -135,5 +132,16 @@
         </div>
       </div>
     
+      <div class="px-5 pt-6 rounded-xl">
+        <div class="flex gap-3">
+          <img src="./assets/activity.png" alt="Activity Icon" />
+          <p class="px-3 font-bold text-xl">Activity Log</p>
+        </div>
+        <br />
+        <button id="clear-btn" class="btn btn-active btn-primary">Clear History</button>
+        <br /><br />
+        <div id="activity-log"></div>
+      </div>
+    </div>
 </body>
 </html>
