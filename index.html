@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Dashboard</title>
+    <script src="https://kit.fontawesome.com/09c942dff7.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div class="my-10">
+            <div class="navbar bg-base-100 shadow-sm rounded-md">
+              <div class="flex-1 flex gap-3">
+                <img src="assets/logo.png" width="51.24px" height="51.24px" alt="Logo" />
+                <a class="text-2xl">Dev <span class="font-extrabold">Board</span></a>
+              </div>
+              <div class="flex-none flex gap-15">
+                <div class="flex gap-1">
+                  <img src="assets/checkbox.png" alt="Task Icon" />
+                  <p id="nav-num" class="text-2xl font-bold">23</p>
+                </div>
+                <button class="theme-button">
+                  <img src="assets\theme-btn.png" alt="Theme Toggle" />
+                </button>
+              </div>
+            </div>
+        </div>          
+    </nav>
+
+    <div class="flex justify-between gap-20">
+        <div class="mt-10 mb-5 flex flex-col gap-20 w-full items-stretch justify-between">
+          <div class="flex gap-5 justify-between">
+            <div class="flex-1">
+              <div class="flex gap-5 rounded-md justify-center items-center py-6 px-5 bg-gray-200">
+                <img src="./assets/checkbox.png" alt="Checkbox" />
+                <div>
+                  <p>Task Assigned</p>
+                  <p id="task-num" class="font-bold text-2xl">6</p>
+                </div>
+              </div>
+            </div>
+            
+            <button id="discover-btn">
+              <div class="py-4 px-6 flex gap-5 bg-gradient-to-r from-blue-500 to-purple-200 rounded-md">
+                <img src="./assets/board.png" alt="Board Icon" />
+                <p class="text-white my-5">Discover Something <br />New Today!</p>
+              </div>
+            </button>
+
+            <div class="flex gap-5 mx-10 rounded-md p-8 bg-gray-200">
+              <img src="./assets/calender.png" alt="Calendar Icon" />
+              <h1 id="date" class="font-bold text-xl"></h1>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
