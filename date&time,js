@@ -1,0 +1,3 @@
+const currentDate = new Date();
+const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById('date').textContent = currentDate.toLocaleDateString('en-US', dateOptions);
